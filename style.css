@@ -1,0 +1,123 @@
+*{
+    margin:0px;
+    padding: 0px;   
+} 
+body{
+    overflow: hidden;
+    background-image: url(background.jpg);
+}
+.main{
+    background-image: url(background.jpg);
+    color: white;
+    min-height: 100vh;
+    transition: .3 ease;
+}
+.main.active{
+    filter: blur(15px);
+}
+.home{
+    height: 120px;
+    margin-bottom: 140px;
+}
+.home img{
+    height:100px;
+    width:150px;
+    margin-left: 50px;
+}
+.sectionMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainContent
+{
+    display: flex;
+    width: 453px;
+    justify-content: center;
+    flex-direction: column;
+}
+.mainContent h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-align: center;
+}
+.mainContent p{
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+.sectionMain .startGame{
+     outline: none;
+     margin-top: 20px;
+     background: #c40094;
+     border: solid 2px white;
+     border-radius: 14px;
+     width: 190px;
+     height: 55px;
+     color: white;
+     cursor: pointer;
+     letter-spacing: 2px;
+     box-shadow: 0 0 10px #c40094;
+     transition: 0.4s;
+}
+.sectionMain .startGame:hover{
+    background: black;
+    box-shadow: none;
+}
+.guidelines{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 400px;
+    transform: translate(-50%, -50%) scale(.9);
+    top:50%;
+    left: 50%;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    color: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+}
+.guidelines.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+.guidelines h1{
+    text-align: center; 
+    margin-bottom: 10px;
+    color: #c40094;
+}
+.guidelines p{
+    margin-bottom: 6px;;
+}
+.guidelines .guidelines-semi{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+.guidelines .guidelines-semi button,a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c40094;
+    width: 90px;
+    height:25px;
+    font-size: 18px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+}
+.guidelines .guidelines-semi button:hover,a:hover{
+    background: white;
+    color: #c40094;
+    cursor: pointer;
+    border: 2px solid #999;
+}
